@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Untuk my love dini😝</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Untuk andini, Yang tak pernah pudar haha💖</h1>
+    <p>
+      Saat kau tersenyum, dunia jadi lebih ringan. Saat kau dekat, hati ini sibuk tak karuan.
+      Ini bukan sekedar kata — ini alasan aku selalu kembali pada kamu, karena aku menyukaimu. 
+    </p>
+
+    <div class="btn-group">
+      <button id="loveBtn">💌 Kirim Cinta</button>
+      <button id="quoteBtn">✨ Ambil Quote</button>
+    </div>
+
+    <div class="quote" id="quote">
+      "Kamu tuh kayak Chrome, muncul di setiap tab pikiranku.. "
+    </div>
+
+    <div class="author">By Garzz always nt:)</div>
+    <footer>🕓 21:05 PM</footer>
+  </div>
+
+  <audio id="bgm" autoplay loop>
+    <source src="lagu.mp3" type="audio/mpeg">
+  </audio>
+
+  <script>
+    const quotes = [
+      "Cinta itu sederhana, yang rumit cuma orangnya.",
+      "Baper itu wajar, asal jangan sama yang udah punya pacar.",
+      "Cinta sejati itu bukan soal janji, tapi bukti setiap hari.",
+      "Kamu nggak perlu sempurna, cukup kamu aja yang aku cinta.",
+      "Boleh nggak sih aku baper tiap kamu senyum?"
+    ];
+
+    document.getElementById("quoteBtn").addEventListener("click", () => {
+      const randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
+      document.getElementById("quote").textContent = `"${randomQuote}"`;
+    });
+
+    document.getElementById("loveBtn").addEventListener("click", () => {
+      alert(" 💖Pesan terkirim: Aku nyaman sama kamu, tapi kamu sadar nggak sih?");
+    });
+  </script>
+
+</body>
+</html>
